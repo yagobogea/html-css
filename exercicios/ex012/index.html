@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos Com HTML5</title>
+    <style>
+        body
+        {
+            background-color: rgba(255, 68, 68, 0.24);
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo Vídeos hospedados localmente</h1>
+    <hr>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <p>Há alguns formatos de vídeos suportados por cada navegador, esses formatos são: mp4, m4v, ogv e webm. Para inserir em um site, é bom colocar todos possíveis, pois nunca se sabe em qual navegador o usuário irá abrir seu site.</p>
+
+    <video width="650" poster="imagens/minatoobito.png" controls>
+        <source src="midia/minato-vs-obito.mp4" type="video/mp4">
+        <source src="midia/minato-vs-obito-web.webm" type="video/webm">
+        <p>Infelizmente o seu navegador não tem compatibilidade com vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos externos</h1>
+    <hr>
+    <p>Outra forma de inserir vídeos ao seu site, é indo ao youtube ou vimeo e clicando no botão compartilhar, e pegando a incorporação para HTML5 que o próprio youtube ou vimeo dá e colar diretamente sem a necessidade de abrir tag no seu código HTML5. Dessa forma:</p>
+    <img width="600" src="imagens/passo-um.png" alt="Print do youtube">
+    <img width="600" src="imagens/passo-dois.png" alt="Print do youtube">
+    <img width="600" src="imagens/passo-tres.png" alt="Print do youtube">
+    <img width="600" src="imagens/codigo.png" alt="Print código HTML5">
+    <br>
+    <hr>
+    <h2>Vídeos inseridos</h2>
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=Vf5r002d48uMJAd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e&title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

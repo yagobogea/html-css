@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <hr>
+    <p>Para usar um link externo (ou âncora) é necessário utilizar a tag &lt;a&gt; e colocar a URL desejada no campo href (referência de hipertexto). Dessa forma: &lt;a href="https://www.youtube.com/@CursoemVideo"&gt;</p>
+    <p>Você pode acessar o canal do <a href="https://www.youtube.com/@CursoemVideo">Curso em Vídeo</a></p>
+    <p>Você pode acessar também o <a href="https://gustavoguanabara.github.io/">repositório público do Guanabara</a> no GitHub</p>
+    <p>Para colocar uma URL externa e abri-lá sem ela sobrepor o seu site, usa-se o paramêtro target="_blank" (janela nova em branco) e o rel="external" (link externo ao meu site). Dessa forma: &lt;a href="https://www.netflix.com/browse target="_blank" rel="external"&gt;</p>
+    <p><a href="https://readcomiconline.li/Comic/Invincible/TPB-1-Family-matters?id=34153#1" target="_blank" rel="external">Acesse aqui</a> o primeiro capítulo da HQ Invencível</p>
+    <h2>Usando links internos</h2>
+    <p>Links internos farão uma ligação com outra página que esteja dentro do meu próprio servidor. Para criar um link interno é necessário ter uma outra página. E para fazer isso é necessário implementar um arquivo secundário dentro do index, esse arquivo tem que estar na mesma página do index. Dessa forma:&lt;a href="outrapágina.html" rel="next"&gt;</p>
+    <p>Esta é a primeira página do site, se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>Caso o arquivo esteja dentro de uma pasta, é necessário informar o seu caminho. Dessa forma: &lt;a href="nomedapasta/pag003.html">página de notícias&gt;</p>
+    <p>Acesse também a minha <a href="Noticias/pag003.html" rel="next" target="_self" >página de notícias</a></p>
+    
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/04 - Primeiros passos HTML.pdf" download="Primeiros passos HTML.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+        <li><a href="livro/04 - Primeiros passos HTML.zip" download="Primeiros passos HTML.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

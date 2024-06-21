@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+</head>
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    a {
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .league {
+        color: rgb(98, 200, 247);
+        text-decoration: none;
+    }
+
+
+    .insta {
+        color: rgb(255, 0, 128);
+        text-decoration: none;
+    }
+
+    .gpt {
+        color: rgb(75, 238, 162);
+        text-decoration: none;
+    }
+
+    .league::before {
+        content: '⚔ ';
+        color: grey;
+    }
+
+    .insta::before {
+        content: '☎ ';
+        color: black;
+    }
+
+    .gpt::before {
+        content: '✉ ';
+        color: black;
+    }
+
+    /* PARA LINKS JÁ VISITADOS 
+
+    a:visited {
+        color: red;
+    }
+
+    se o links já tiver sido visitado ele assumirá essa cor
+    */
+</style>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.leagueofgraphs.com/pt/" class="league" target="_blank">League of Graphs</a></li>
+        <li><a href="https://www.instagram.com/?hl=pt-br" class="insta" target="_blank">Instagram</a></li>
+        <li><a href="https://chatgpt.com/?oai-dm=1" class="gpt" target="_blank">Chat GPT</a></li>
+    </ul>
+</body>
+</html>

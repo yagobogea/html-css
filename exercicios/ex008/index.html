@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica(não possui significado, apenas forma)).</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque, usando a tag</strong> &lt;strong&gt; (semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark style="background-color: yellow;">texto marcado</mark>, usando a tag &lt;mark&gt; </p>
+    <p>para mudar a cor do marcador é necessário usar CSS3, em HTML5 não há uma forma de mudar a cor.</p>
+    <p>Dessa forma <mark style="background-color: orange;">&lt;mark style="background-color: cor desejada"&gt;</mark></p>
+    <p>Para que todos os marks mantenham um padrão, é necessário criar uma tag &lt;style&gt; acima de &lt;head&gt;&lt;/head&gt; para os marks. Dessa forma <br> &lt;style&gt; <br> <br>
+        mark <br>
+        {<br>
+            background-color: cor desejada;
+        <br>}<br>
+        &lt;/style&gt;</p>
+        <p>(meu código está cheio de &lt;br&gt; em excesso e exagero, mas apenas porque ainda não sei fazer o que desejo em CSS3).</p>
+        <p>Agora demonstrando esse padrão: <mark>todos</mark> os <mark>textos</mark> marcados <mark>com a tag</mark> &lt;mark&gt; <mark>estarão </mark> com o mesmo <mark>padrão de cor</mark>.</p>
+        <h2>Texto grande e pequeno</h2>
+        <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+        <p>Para isso, usamos as tags &lt;big&gt; e a tag &lt;small&gt;. No entanto, como a tag &lt;big&gt; não tem sentido semântico já está obsoleta, logo, caso haja a necessidade de aumentar um texto, isso deve ser feito no CSS3. Já a tag &lt;small&gt;, tem sentido semântico e pode ser usada no código HTML5.</p>
+        <h2>Texto deletado</h2>
+        <p>Podemos marcar um texto como <del>excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+        <p>Para isso, usa-se a tag &lt;del&gt;.</p>
+        <p><del>Teste Teste Teste.</del></p>
+        <h2>Texto inserido</h2>
+        <p>Podemos marcar um texto como <ins>inserido</ins> para uma ênfase e indicar que ele foi adicionado depois, usando a tag &lt;ins&gt;.</p>
+        <p>Existe também o <u>sublinhado</u>, usando a tag &lt;u&gt; (não semântica e provavelmente logo obsoleta).</p>
+        <h2>Texto sobrescrito</h2>
+        <p>Para inserir coisas do tipo x<sup>2</sup>+3<sup>3</sup>, usando a tag &lt;sup&gt;.</p>
+        <h2>Texto subscrito</h2>
+        <p>Para inserir coisas do tipo H<sub>2</sub>O, usando a tag &lt;sub&gt;.</p>
+</body>
+</html>

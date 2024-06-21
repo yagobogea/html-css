@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <hr>
+    <p>Há como fazer vários tipos de listas ordenadas, utilizando a tag &lt;ol&gt; para delimitar a lista toda e &lt;li&gt; para delimitar cada item. Também há como aplicar um parâmetro type nas listas ordenadasm há como fazer listas numeradas utilizando o parâmetro type 1 (que já é o padrão automático), listas alfabéticas maiúsculas utilizando parâmetro type A, listas alfabéticas minúsculas utilizando o parâmetro type a, listas em algarismos romanos maiúsculos utilizando o parâmetro type I e listas em algarismos romanos minúsculos utilizando o parâmetro type i. Dentro do parâmetro type, há como selecionar em que letra/número a lista começará, usando o start. Dessa forma: &lt;ol type="1" start="4"&gt; para listas numeradas, por exemplo.</p>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1">   
+        <li>Acordar</li>
+        <li>Colocar ração para o sushi</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Lavar roupa</li>
+    </ol>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Colocar ração para o sushi</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Lavar roupa</li>
+    </ol>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Colocar ração para o sushi</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Lavar roupa</li>
+    </ol>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Colocar ração para o sushi</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Lavar roupa</li>
+    </ol>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Colocar ração para o sushi</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Lavar roupa</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <p>Há também as listas não ordenadas, também conhecidas como listas com marca, essas são as lista que possuem marcadores atrás, como bolinhas vazias (circle), bolinhas pretas (disc, que já é o padrão automático) e quadrados (square). Para criar uma lista não ordenada utiliza-se a tag &lt;ul&gt;, e para escolher o seu marcador, utiliza-se o parâmetro type. Dessa forma: &lt;ul type="circle"&gt; para fazer uma lista demarcada por bolinhas vazias por exemplo.</p>
+    <ul>
+        <li>Arroz</li>
+        <li>Maçã</li>
+        <li>Feijão</li>
+        <li>Alface</li>
+        <li>Batata</li>
+    </ul>
+    <ul type="square">
+        <li>Arroz</li>
+        <li>Maçã</li>
+        <li>Feijão</li>
+        <li>Alface</li>
+        <li>Batata</li>
+    </ul>
+    <ul type="circle">
+        <li>Arroz</li>
+        <li>Maçã</li>
+        <li>Feijão</li>
+        <li>Alface</li>
+        <li>Batata</li>
+    </ul>
+    <h2>Misturando listas</h2>
+    <p>Há como criar sublistas dentro das listas principais, podendo ser ol's ou ul's, para que as listas principais se tornem um "tópico" superior as sublistas que seriam a sua "descrição". Dessa forma:
+        <pre>
+&lt;li&gt;Antigas&lt;/li&gt; 
+&lt;ul type="estilo de marcador desejado"&gt;
+    &lt;li&gt;C&lt;/li&gt; 
+    &lt;li&gt;C++&lt;/li&gt; 
+    &lt;li&gt;PHP&lt;/li&gt; 
+    &lt;li&gt;Java&lt;/li&gt; 
+</ul>
+&lt;li&gt;Novas&lt;/li&gt; 
+&lt;ul type="estilo de marcador desejado"&gt;
+    &lt;li&gt;Javascript&lt;/li&gt; 
+    &lt;li&gt;Python&lt;/li&gt; 
+    &lt;li&gt;C#&lt;/li&gt; 
+    &lt;li&gt;Ruby&lt;/li&gt;
+        </pre>
+    <ol>
+        <li>Antigas</li>
+        <ul type="disc">
+            <li>C</li>
+            <li>C++</li>
+            <li>Delphi</li>
+            <li>Java</li>
+        </ul>
+        <li>Novas</li>
+        <ul type="disc">
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Ruby</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <p>As listas de definição são parecidas com dicionários, que há um termo e sequencialmente há a sua definição, e para fazê-la usa-se a tag &lt;dl&gt; para englobar toda a lista, &lt;dt&gt; para englobar o termo a ser definido e &lt;dd&gt; para dar a definição desse termo.</p>
+    <dl>
+        <dt>League of Legends.</dt>
+        <dd>Jogo Moba 5v5</dd>
+        <dt>Gato</dt>
+        <dd>Animal da classe dos felinos.</dd>
+        <dt>Naruto</dt>
+        <dd>Anime de uma representação de ninjas.</dd>
+    </dl>
+</body>
+</html>
